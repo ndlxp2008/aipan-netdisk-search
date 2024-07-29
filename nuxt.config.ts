@@ -21,6 +21,10 @@ export default defineNuxtConfig({
                 {
                     name: 'referrer',
                     content: 'strict-origin-when-cross-origin'
+                },
+                {
+                    name: 'google-adsense-account',
+                    content: 'ca-pub-3608675639486597'
                 }
             ],
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -39,7 +43,7 @@ export default defineNuxtConfig({
                     src: 'https://challenges.cloudflare.com/turnstile/v0/api.js'
                 },
                 {
-                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8210373406341452',
+                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3608675639486597',
                     async: true,
                     crossorigin: 'anonymous'
                 }
@@ -104,7 +108,7 @@ export default defineNuxtConfig({
     ],
     nitro: {
         devProxy: {
-           
+
         }
     },
     runtimeConfig: {
